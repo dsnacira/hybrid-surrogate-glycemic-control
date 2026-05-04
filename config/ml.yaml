@@ -1,5 +1,5 @@
-model_type: random_forest   # random_forest | mlp | gbdt
-retrain_period: 5
-warmup_generations: 2
-alpha: 0.7
-rho: 0.3
+model_type: random_forest
+alpha: 0.2
+rho: 0.7
+warmup_generations: 6
+retrain_period: 2

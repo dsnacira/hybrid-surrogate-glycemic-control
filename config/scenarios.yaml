@@ -10,30 +10,32 @@ S1_normal:
 
 S2_ramadan:
   meals:
-    - {time: "20:00", cho_g: 120}
-  stress_level: 0.0
-  activity_level: 0.0
+    - {time: "20:00", cho_g: 130}
+    - {time: "23:00", cho_g: 40}
+  stress_level: 0.2
+  activity_level: 0.2
   fasting: true
   fasting_window: {start: "05:00", end: "19:30"}
-  noise_sigma: 2.5
+  noise_sigma: 3.5
 
 S3_stress_highcarb:
   meals:
-    - { time: "08:00", cho_g: 120 }
-    - { time: "13:00", cho_g: 140 }
-    - { time: "19:00", cho_g: 100 }
-    - { time: "22:30", cho_g: 40 }
-  stress_level: 0.8
-  noise_sigma: 4.0
-
-
+    - {time: "08:00", cho_g: 110}
+    - {time: "13:00", cho_g: 130}
+    - {time: "19:00", cho_g: 120}
+    - {time: "22:30", cho_g: 50}
+  stress_level: 1.0
+  activity_level: 0.0
+  fasting: false
+  noise_sigma: 5.0
 
 S4_exercise_lowcarb:
   meals:
-    - {time: "08:00", cho_g: 10}
-    - {time: "13:00", cho_g: 15}
-    - {time: "19:00", cho_g: 20}
-  activity_level: 2.0
-  activity_window: ["09:00", "16:00"]
-  stress_level: 0.3
-  noise_sigma: 8.0
+    - {time: "08:00", cho_g: 25}
+    - {time: "13:00", cho_g: 30}
+    - {time: "19:00", cho_g: 35}
+  stress_level: 0.2
+  activity_level: 1.2
+  activity_window: {start: "09:00", end: "16:00"}
+  fasting: false
+  noise_sigma: 5.0
