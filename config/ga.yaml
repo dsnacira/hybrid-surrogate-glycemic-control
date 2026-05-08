@@ -1,11 +1,52 @@
+# config/ga.yaml
+
+# =========================
+# Genetic Algorithm
+# =========================
+
 n_pop: 40
-n_gen: 60
-pc: 0.8
-pm: 0.2
+n_gen: 30
+
+pc: 0.90
+pm: 0.15
+
 elitism: 2
 tournament_k: 3
 
-dose_basal_min: 0.2
-dose_basal_max: 0.5
-insulin_duration_min: 2.0
-insulin_duration_max: 6.0
+# =========================
+# simglucose chromosome
+# x = [basal_rate, carb_ratio, correction_factor]
+# =========================
+
+basal_rate_min: 0.05
+basal_rate_max: 0.80
+
+carb_ratio_min: 8.0
+carb_ratio_max: 30.0
+
+correction_factor_min: 40.0
+correction_factor_max: 150.0
+
+# =========================
+# Legacy compatibility
+# Do not remove yet
+# =========================
+
+dose_basal_min: 0.30
+dose_basal_max: 1.50
+
+insulin_duration_min: 5.0
+insulin_duration_max: 25.0
+
+# =========================
+# Safety / constraints
+# =========================
+
+gmin: 70.0
+gmax: 180.0
+
+severe_hypo_threshold: 54.0
+severe_hyper_threshold: 250.0
+
+penalty_hypo: 2000.0
+penalty_hyper: 500.0

@@ -1,5 +1,7 @@
+.ipynb_checkpoints/
 __pycache__/
 *.pyc
+venv/
+.env
 outputs/
-data/cached_runs/
-.ipynb_checkpoints/
+*.gdoc
